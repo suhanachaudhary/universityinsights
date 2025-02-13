@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply for MBBS Abroad - Study in top countries like Russia, Uzbekistan, Kazakhstan, Philippines, Georgia, Kyrgyzstan, and Egypt.">
+    <title>MBBS Abroad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-primary navbar-expand-lg p-3">
+        <div class="container">
+            <a class="navbar-brand text-white font-bold" href="#">MBBS Abroad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#why">Why Study MBBS</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#countries">Top Countries</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#admission">Admission Process</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#apply">Apply Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white text-center py-16 relative mt-1" style="height: 70vh;">
+        <img src="hero1.png" alt="Study MBBS Abroad" class="absolute inset-0 w-full h-full object-cover opacity-30">
+        <div class="relative z-10 flex flex-col items-center justify-center h-full">
+            <h1 class="text-4xl font-bold">Apply Now for MBBS Abroad</h1>
+            <p class="mt-4 text-lg">Start your medical career in top international universities.</p>
+            <a href="#apply" class="mt-6 inline-block bg-yellow-400 text-blue-900 font-bold py-3 px-6 rounded">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- Why Study MBBS Abroad -->
+    <section id="why" class="container mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
+        <h2 class="text-2xl font-semibold text-center">Why Study MBBS Abroad?</h2>
+        <ul class="mt-4 list-disc list-inside text-gray-700">
+            <li>Affordable tuition fees</li>
+            <li>Globally recognized degrees</li>
+            <li>Modern infrastructure & high-quality education</li>
+            <li>Easy admission process</li>
+        </ul>
+    </section>
+
+    <!-- Top Countries -->
+    <section id="countries" class="container mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
+        <h2 class="text-2xl font-semibold text-center">Top Countries for MBBS</h2>
+        <div class="row mt-6 d-flex justify-content-center align-item-center">
+            <div class="col-md-3 col-sm-6 mb-3 text-center bg-blue-500 text-white p-4 rounded">Russia</div>
+            <div class="ms-2 col-md-3 col-sm-6 mb-3 text-center bg-blue-500 text-white p-4 rounded">Uzbekistan</div>
+            <div class="ms-2 col-md-3 col-sm-6 mb-3 text-center bg-blue-500 text-white p-4 rounded">Kazakhstan</div>
+            <div class="col-md-3 col-sm-6 mb-3 text-center bg-blue-500 text-white p-4 rounded">Philippines</div>
+            <div class="ms-2 col-md-3 col-sm-6 mb-3 text-center bg-blue-500 text-white p-4 rounded">Georgia</div>
+            <div class="ms-2 col-md-3 col-sm-6 mb-3 text-center bg-blue-500 text-white p-4 rounded">Kyrgyzstan</div>
+            <div class="col-md-3 col-sm-6 mb-3 text-center bg-blue-500 text-white p-4 rounded">Egypt</div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section id="apply" class="container mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
+        <h2 class="text-2xl font-semibold text-center">Apply Now</h2>
+        <form id="applicationForm" action="process.php" method="POST" class="mt-6 space-y-4">
+            <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded" required>
+            <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded" required>
+            <input type="text" name="phone" placeholder="Your Phone" class="w-full p-3 border rounded" required>
+            <select name="country" class="w-full p-3 border rounded" required>
+                <option value="">Select Preferred Country</option>
+                <option>Russia</option>
+                <option>Uzbekistan</option>
+                <option>Kazakhstan</option>
+                <option>Philippines</option>
+                <option>Georgia</option>
+                <option>Kyrgyzstan</option>
+                <option>Egypt</option>
+            </select>
+            <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-4 mt-10">
+        <p>&copy; 2025 MBBS Abroad. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
